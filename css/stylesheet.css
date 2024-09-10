@@ -1,0 +1,52 @@
+.grid_simple {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(3, 30rem);
+  align-items: center;
+  gap: 20px;
+}
+.grid_simple > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+/* Dolor AAAAAAAAAAAAAAAAAAAAAAAAA */
+.grid_advanced {
+  margin: auto;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  grid-template-rows: repeat(3, 20rem);
+
+  grid-template-areas:
+    "a a b e e"
+    "c d d e e";
+  align-items: center;
+  gap: 20px;
+}
+
+.grid_advanced > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.grid_advanced > img:nth-of-type(1) {
+  grid-area: a;
+}
+
+.grid_advanced > img:nth-of-type(2) {
+  grid-area: b;
+}
+.grid_advanced > img:nth-of-type(3) {
+  grid-area: c;
+}
+.grid_advanced > img:nth-of-type(4) {
+  grid-area: d;
+}
+.grid_advanced > img:nth-of-type(5) {
+  grid-area: e;
+}
+/* Sindrome de tunel carpal */

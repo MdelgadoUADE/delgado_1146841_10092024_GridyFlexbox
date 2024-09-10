@@ -1,0 +1,19 @@
+.grid_simple {
+  margin: auto;
+  width: ;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 30rem);
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+.grid_simple > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.grid_advanced {
+}
